@@ -1,6 +1,6 @@
 %define name    gtkdive
 %define version 0.71
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define title       GtkDive
 %define longtitle   Buehlmann ZH-L16 model diving simulation
