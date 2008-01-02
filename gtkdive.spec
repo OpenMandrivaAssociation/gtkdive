@@ -18,6 +18,7 @@ Source2:        %{name}-32.png.bz2
 Source3:        %{name}-48.png.bz2
 BuildRequires:  gtk+2-devel
 BuildRequires:  libxml2-devel
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This program was written to learn about the Buehlmann ZH-L16 model that deals
