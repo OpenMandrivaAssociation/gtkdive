@@ -47,17 +47,6 @@ install -D -m 644 %{name}-32.png %{buildroot}%{_iconsdir}/%{name}.png
 install -D -m 644 %{name}-16.png %{buildroot}%{_miconsdir}/%{name}.png 
 
 # menu entry
-mkdir -p %{buildroot}%{_menudir}
-cat >%{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-    needs="x11"\
-    section="More Applications/Sciences/Other"\
-    command="%{_bindir}/%{name}"\
-    icon="%{name}.png" \
-    title="%{title}" \
-    longtitle="%{longtitle}" \
-    xdg="true"
-EOF
 
 install -d -m 755 %{buildroot}%{_datadir}/applications
 cat >  %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -88,7 +77,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS COPYING INSTALL ChangeLog README
 %{_bindir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
