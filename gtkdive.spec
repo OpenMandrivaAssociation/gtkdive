@@ -11,7 +11,7 @@ Release:        %{release}
 Summary:        Buehlmann ZH-L16 model diving simulation
 License:        GPL
 Group:          Sciences/Other
-URL:            http://mattzz.dyndns.org/twiki/bin/view/Projects/GtkDive
+URL:            https://mattzz.dyndns.org/twiki/bin/view/Projects/GtkDive
 Source0:        http://mattzz.dyndns.org/twiki/pub/Projects/GtkDive/%{name}-%{version}.tar.bz2
 Source1:        %{name}-16.png.bz2
 Source2:        %{name}-32.png.bz2
