@@ -16,6 +16,11 @@ Source0:        http://mattzz.dyndns.org/twiki/pub/Projects/GtkDive/%{name}-%{ve
 Source1:        %{name}-16.png.bz2
 Source2:        %{name}-32.png.bz2
 Source3:        %{name}-48.png.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gtk+2-devel
 BuildRequires:  libxml2-devel
 
